@@ -510,10 +510,10 @@ public class Utility {
 	 * @param we
 	 * @param i
 	 */
-//	public void waitForVisibiltyElement(WebElement we, Duration i) {
-//		WebDriverWait webWait = new WebDriverWait(driver, i);
-//		webWait.until(ExpectedConditions.visibilityOf(we));
-//	}
+	public void waitForVisibiltyElement(WebElement we, Duration i) {
+		WebDriverWait webWait = new WebDriverWait(driver, i);
+		webWait.until(ExpectedConditions.visibilityOf(we));
+	}
 
 //	public void verifyInnerText(WebElement we, String exptInnertext) {
 //		waitForVisibiltyElement(we, 15);

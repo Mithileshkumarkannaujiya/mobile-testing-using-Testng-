@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-677835379\testng-customsuite.xml</span>
+                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse--314332988\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,10 +130,36 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
-                  <div class="stack-trace">java.lang.ClassCastException: io.appium.java_client.AppiumDriver cannot be cast to io.appium.java_client.android.AndroidDriver
-	at com.alliedTechnologies.utility.Utility.androidBTNS(Utility.java:479)
-	at com.alliedTechnologies.utility.Utility.hideKeyBoard(Utility.java:150)
-	at com.sns.loginPage.LoginPage.loginTest(LoginPage.java:28)
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [a44e5b03-6ca9-4ca9-8dcc-3e89646e5ced, clickElement {id=00000000-0000-00f6-0000-000900000003}]
+Capabilities {appium:appActivity: com.ryanheise.audioservice...., appium:appPackage: com.allied.sns, appium:databaseEnabled: false, appium:desired: {appActivity: com.ryanheise.audioservice...., appPackage: com.allied.sns, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: vivo, appium:deviceModel: V2153, appium:deviceName: 139191541900080, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 139191541900080, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 88, appium:takesScreenshot: true, appium:viewportRect: {height: 2170, left: 0, top: 88, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AppiumDriver:  on ANDROID (a44e5b03-6ca9-4ca9-8dcc-3e89646e5ced)] -&gt; xpath: //android.widget.ImageView[@content-desc=&quot;Welcome Onboard
+Enter email to continue 
+&quot;]/android.widget.EditText]
+Session ID: a44e5b03-6ca9-4ca9-8dcc-3e89646e5ced
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.alliedTechnologies.utility.Utility.click(Utility.java:161)
+	at com.sns.loginPage.LoginPage.loginTest(LoginPage.java:26)
 	at test.check.Login(check.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -172,7 +198,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-677835379\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse--314332988\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -229,12 +255,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'test.check')
-data.setCell(0, 3, 2138);
+data.setCell(0, 3, 608);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 608 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -267,17 +293,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchapplication(public void test.check.Login())</span>
-                <span class="method-start">400 ms</span>
+                <span class="method-start">450 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Login</span>
-                <span class="method-start">21240 ms</span>
+                <span class="method-start">23952 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">flush([TestResult name=Login status=FAILURE method=check.Login()[pri:0, instance:test.check@706a04ae] outp...)</span>
-                <span class="method-start">23384 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">flush([TestResult name=Login status=FAILURE method=check.Login()[pri:0, instance:test.check@782663d3] outp...)</span>
+                <span class="method-start">24570 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
